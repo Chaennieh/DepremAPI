@@ -8,10 +8,10 @@ app = Flask(__name__, template_folder='templates')
 
 # Veritabanı bağlantısı
 conn = pyodbc.connect('Driver={ODBC Driver 17 for SQL Server};'
-                      'Server=clicq-db.database.windows.net;'
-                      'Database=dbd3c;'
+                      'Server=database;'
+                      'Database=name;'
                       'UID=hilaldindar;'
-                      'PWD=1441Hilal;')
+                      'PWD=****Hilal;')
 cursor = conn.cursor()
 
 # Veri çekme ve veritabanına ekleme işlemini gerçekleştiren fonksiyon
